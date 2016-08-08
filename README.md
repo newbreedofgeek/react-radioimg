@@ -48,7 +48,7 @@ options: [{optionsA}, {optionsB}]
 
   // option object should be of this schema
   {
-    btnCls: 'btn btn-lg btn-default', // a css class string to represent the default base class for the radio button
+    btnCls: 'btn btn-lg btn-default', // a css class string to represent the default base class for each radio button
     btnSelCls: 'btn btn-lg btn-primary sel', // a css class string to represent the selected class
     img: 'mood-01.png', // an image to use (this is optional, use this if you want to render an image)
     val: 'no', // the value when selected
