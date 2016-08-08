@@ -1,6 +1,7 @@
 # react radioimg
 is a simple custom radio button component for your react projects. it lets you create your own radio buttons using your own images or css classes. very useful if you want to create yes/no buttons or similar single value input ui components and you don't want the default radio buttons that html or bootstrap gives you.
 
+###### if you like this, then check out my easy to use react wizard component called react-stepzilla - [https://github.com/newbreedofgeek/react-stepzilla](https://github.com/newbreedofgeek/react-stepzilla)
 
 ### what does it do?
 - something like this of course:
