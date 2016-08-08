@@ -1,0 +1,49 @@
+.radio-holder {
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.btn-default {
+  background-color: #d1d3d4 !important;
+  border-color: #d1d3d4 !important;
+}
+
+.btn-default:focus, .btn-default.focus, .btn-default:hover, .btn-default.hover, .btn-default:active, .btn-default.active {
+  background-color: #d1d3d4 !important;
+  border-color: #d1d3d4!important;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.focus, .btn-default:active.focus, .btn-default:active:focus, .btn-default:focus {
+  background-color: #d1d3d4 !important;
+  border-color: #d1d3d4 !important;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 18px 30px !important;
+    font-size: 19px !important;
+    line-height: 1.33333 !important;
+    border-radius: 0 !important;
+}
+
+.btn-primary.sel {
+  background-color: #80b2ce !important;
+  border-color: #80b2ce !important;
+  background-image: none !important;
+}
+
+.radio-img-options {
+    color: transparent;
+    width: 75px;
+    height: 75px;
+    background-size: 75px;
+    background-repeat: no-repeat;
+    background-color: #d1d3d4;
+    background-position: 50%;
+    border: initial;
+    width: 65px;
+}
+
+.radio-img-options.sel {
+    background-color: #80b2ce;
+    color: transparent;
+}

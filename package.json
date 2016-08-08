@@ -1,0 +1,48 @@
+{
+  "name": "react-radioimg",
+  "version": "0.0.1",
+  "description": "A simple ReactJS Custom Radio Button Component (use your own images or CSS classes)",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "prepublish": "npm run build",
+    "example": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newbreedofgeek/react-stepzilla.git"
+  },
+  "keywords": [
+    "react",
+    "multistep",
+    "react",
+    "wizard",
+    "react"
+  ],
+  "author": "@newbreedofgeek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newbreedofgeek/react-stepzilla/issues"
+  },
+  "homepage": "https://github.com/newbreedofgeek/react-stepzilla#readme",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "buffer": "^4.7.1",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-loader": "^6.2.4"
+  }
+}
