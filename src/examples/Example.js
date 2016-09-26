@@ -17,7 +17,7 @@ export default class Example extends Component {
     super(props);
 
     this.state = {
-      areYouHappy: 'no'
+      areYouHappy: 'no',
     };
   }
 
@@ -85,6 +85,44 @@ export default class Example extends Component {
       }
     ]
 
+    const ratingOptions = [
+      {
+        btnCls: pnCls,
+        btnSelCls: pnClsSel,
+        val: '1',
+        label: '1',
+        img: moodImgs[0]
+      },
+      {
+        btnCls: pnCls,
+        btnSelCls: pnClsSel,
+        val: '2',
+        label: '2',
+        img: moodImgs[1]
+      },
+      {
+        btnCls: pnCls,
+        btnSelCls: pnClsSel,
+        val: '3',
+        label: '3',
+        img: moodImgs[2]
+      },
+      {
+        btnCls: pnCls,
+        btnSelCls: pnClsSel,
+        val: '4',
+        label: '4',
+        img: moodImgs[3]
+      },
+      {
+        btnCls: pnCls,
+        btnSelCls: pnClsSel,
+        val: '5',
+        label: '5',
+        img: moodImgs[4]
+      }
+    ]
+
     let showHowHappyCls = 'form-group';
 
     if (this.state.areYouHappy == 'no') {
@@ -93,6 +131,8 @@ export default class Example extends Component {
 
     return (
       <div className='example'>
+        <h1>react radioimg - Examples</h1>
+
         <div className='radio-holder row'>
         <div className="col-md-12 ">
           <form className="form-horizontal">
@@ -123,6 +163,25 @@ export default class Example extends Component {
                   options={painRatingOptions}
                   defaultValue={this.state.howHappy}
                   marginSpace="5" />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label className="col-md-4 control-label">
+                  Please rate me...
+              </label>
+              <div className="col-md-8 text-right">
+                <RadioImg
+                  ref="rateMe"
+                  options={ratingOptions}
+                  defaultValue={this.state.rateMe}
+                  marginSpace="10"
+                  onChange={(e) => {
+                    this.setState({
+                      rateMe: e.target.value
+                    })}}
+                  enableSelectionFill={true}
+                  selectionFillCls="fill" />
               </div>
             </div>
           </form>

@@ -1,6 +1,6 @@
 {
   "name": "react-radioimg",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple ReactJS Custom Radio Button Component (use your own images or CSS classes)",
   "main": "./dist/main.js",
   "scripts": {

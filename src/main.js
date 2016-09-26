@@ -44,6 +44,12 @@ export default class RadioImg extends Component {
             let optionLook = Object.assign({}, this.optionStyle);
             let clsToUse = (this.value == item.val) ? item.btnSelCls : item.btnCls;
 
+            if (this.props.enableSelectionFill) {
+              if (++index <= parseInt(this.value)) {
+                clsToUse += ' ' + this.props.selectionFillCls
+              }
+            }
+
             if (item.img) {
               optionLook.backgroundImage = `url(${item.img})`
             }
@@ -66,5 +72,7 @@ export default class RadioImg extends Component {
 RadioImg.defaultProps = {
   marginSpace : 5,
   defaultValue: '',
-  onChange: null
+  onChange: null,
+  enableSelectionFill: false,
+  selectionFillCls:''
 };
