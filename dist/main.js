@@ -72,6 +72,12 @@ var RadioImg = function (_Component) {
           var optionLook = Object.assign({}, _this2.optionStyle);
           var clsToUse = _this2.value == item.val ? item.btnSelCls : item.btnCls;
 
+          if (_this2.props.enableSelectionFill) {
+            if (++index <= parseInt(_this2.value)) {
+              clsToUse += ' ' + _this2.props.selectionFillCls;
+            }
+          }
+
           if (item.img) {
             optionLook.backgroundImage = 'url(' + item.img + ')';
           }
@@ -100,5 +106,7 @@ exports.default = RadioImg;
 RadioImg.defaultProps = {
   marginSpace: 5,
   defaultValue: '',
-  onChange: null
+  onChange: null,
+  enableSelectionFill: false,
+  selectionFillCls: ''
 };
